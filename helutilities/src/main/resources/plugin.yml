@@ -1,0 +1,20 @@
+name: HelUtilities
+main: me.heliostudios.helutilities.HelUtilities
+version: '1.1.1'
+api-version: '1.13'
+author: heliostudios
+description: Belirli blokları kırınca ödül verir.
+depend: [Vault]
+
+commands:
+  helutilitiesreload:
+    description: Config dosyasını yeniden yükler.
+    permission: helutilities.admin
+  hreload:
+    description: Config dosyasını yeniden yükler (kısa versiyon).
+    permission: helutilities.admin
+
+permissions:
+  helutilities.admin:
+    description: Admin komutlarını kullanabilme izni.
+    default: op
