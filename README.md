@@ -28,47 +28,6 @@ HelUtilities is a powerful and flexible Minecraft plugin that adds a customizabl
 3. Start/restart your server
 4. Configure the plugin in `plugins/HelUtilities/config.yml`
 
-## Configuration
-Example configuration:
-prefix: "&8[&6HelUtilities&8] "
-
-messages:
-  inventory-full:
-    enabled: true
-    text: "&eItem's are drop cause !"
-  item-reward:
-    enabled: true
-    text: "&a%amount%x %item% kazandın!"
-  money-reward:
-    enabled: true
-    text: "&a%amount% para kazandın!"
-  reward-error:
-    enabled: true
-    text: "&cÖdül verilirken bir hata oluştu!"
-  economy-error:
-    enabled: true
-    text: "&cPara ödülü verilemedi: Ekonomi sistemi bulunamadı!"
-
-reward-blocks:
-  stone:
-    rewards:
-    - "item 1 5 100"
-    - "item stone 5 100"
-    - "item minecraft:stone 5 100"
-    - "money 125 50"
-    - "command 50 summon creeper %x% %y% %z%"
-    - "command 25 give %player% minecraft:dirt 3"
-    effects:
-      - "firework"
-      - "particle FLAME"
-      - "sound BLOCK_NOTE_BLOCK_PLING"
-  wheat:
-    rewards:
-      - "item gold_ingot 1 70"
-    effects:
-      - "particle VILLAGER_HAPPY"
-      - "sound ENTITY_PLAYER_LEVELUP"
-
 ### Reward Format
 - Items: `item <material> <amount> <chance>`
 - Money: `money <amount> <chance>`
